@@ -33,15 +33,16 @@ function draw() {
   for (var k = 0;k <=width;k =k +80){
     divisions.push(new Division(k, height-divisionHeight/2,10,divisionHeight));
   }
+    for (var k=0;k < divisions.length; k++){
+    divisions[k].display();
+  }
+ gr.display();
   for (var j=0;j < particles.length; j++){
     particles[j].display();
-  }
+  }  
   for (var j=0;j < plinkos.length; j++){
    plinkos[j].display();
   }
-  for (var k=0;k < divisions.length; k++){
-    divisions[k].display();
-  }
-  gr.display();
+
   //drawSprites();
 }

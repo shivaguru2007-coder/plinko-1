@@ -2,8 +2,8 @@ class Division {
     constructor(x, y,w,h) {
       var options = {
         isStatic: true,
-        restitution:0.3,
-        friction:0.5,
+        restitution:1,
+        friction:4,
         density:1.2
       }
       this.body = Bodies.rectangle(x, y, 50, 50, options);
